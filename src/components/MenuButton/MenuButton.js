@@ -6,6 +6,8 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 
+import { NavLink } from 'react-router-dom';
+
 const styles = theme => ({
     button: {
         height: "100%",
@@ -37,8 +39,10 @@ class MenuButton extends React.Component{
     }
 
     render(){
-        const { classes, label, tags } = this.props;
+        const { classes, label, title, tags } = this.props;
         const { anchorEl } = this.state;
+        const LinkRef = React.forwardRef((props, ref) => <div ref={ref}><NavLink {...props} /></div>);
+        
         return(
             <div className={css.container}>
                 <Button 
@@ -47,7 +51,7 @@ class MenuButton extends React.Component{
                     aria-haspopup="true" 
                     onClick={this.handleClick}
                 >  
-                    {label}
+                    {title}
                 </Button>
                 <Menu
                     id="menu"
@@ -57,15 +61,31 @@ class MenuButton extends React.Component{
                     onClose={this.handleClose}
                 >
                     {
-                        tags.map((item, idx) => (
-                            <MenuItem 
-                                key={idx} 
-                                onClick={this.handleClose}
-                                className={classes.menu}
-                            >
-                                {item}
-                            </MenuItem>
-                        ))
+                        tags.map((item, idx) => {
+                            let path;
+                            if(label === 'aboutus'){
+                                if(item === "關於我們")
+                                    path = "/aboutus";
+                                else{
+                                    path = "/staff/" + item;
+                                }
+                            }
+                            else{
+                                path = "/" + label + "/" + item;
+                            }
+                            
+                            return(
+                                <MenuItem 
+                                    key={idx} 
+                                    onClick={this.handleClose}
+                                    className={classes.menu}
+                                    component={LinkRef}
+                                    to={path}
+                                >
+                                    {item}
+                                </MenuItem>
+                            )
+                        })
                     }
                 </Menu>
             </div>
