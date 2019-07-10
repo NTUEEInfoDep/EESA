@@ -2,8 +2,36 @@
 {
     width: 100%;
     margin-top: 10vh;
-    min-height: 90%;
-    background-color: yellow;
+    height: 90vh;
     position: absolute;
-    z-index: -1;
+    display: flex;
+}
+
+.leftContainer
+{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+
+.rightContainer
+{
+    height: 100%;
+    width: 50%;
+}
+
+.formContainer
+{
+    margin: 0 auto;
+    margin-top: 12%;
+    height: 80%;
+    width: 90%;
+    background-color: yellow;
+}
+
+.inputContainer
+{
+    width: 50%;
+    margin: 0 auto;
+    height: 10%;
 }

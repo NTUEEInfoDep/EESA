@@ -4,9 +4,10 @@ import css from './Dept.module.css';
 class Dept extends React.Component{
 
     render(){
+        const { id } = this.props.match.params;
         return(
             <div className={css.page}>
-                Depts.
+                Depts {id}
             </div>
         )
     }
