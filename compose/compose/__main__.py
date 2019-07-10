@@ -17,8 +17,8 @@ def make_folder(name):
         file.write("export {{ default }} from './{}.js'".format(name))
     with open(os.path.join(root, '{}.js'.format(name)), 'w') as file:
         content = ''
-        content += "import React from 'react';\n\n"
-        content += "import classes from './{}.module.css';\n\n".format(name)
+        content += "import React from 'react';\n"
+        content += "import css from './{}.module.css';\n\n".format(name)
         content += "class {} extends React.Component{{\n\n".format(name)
         content += "    render(){\n"
         content += "        return(\n"

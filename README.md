@@ -26,7 +26,7 @@ For each component (either in `routes` or `components`), it should have its **ow
     - `index.js`
     - `utils.js`
 
-### Reusing Components
+#### Reusing Components
 - For example, the same template `Dept` can be used for any department. Its format should be similar.
 - If customization is needed, use inheritance.
 
@@ -37,9 +37,11 @@ python3 -m pip install .
 compose <component-name>
 ```
 
-### Use responsive CSS
-- Use % rather than px.
+### Use responsive/relative CSS
+#### Prevent extensive hard-coding! (px)
+- Use % rather than px. Take care of parent-children containers.
 - If hard-coding is really necessary, use `vh` and `vw`.
+    - Work-around for collapsing margins.
 
 ## Contents of the Website
 - Header (Navigation bar)

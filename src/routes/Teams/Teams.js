@@ -1,12 +1,11 @@
 import React from 'react';
-
-import classes from './Teams.module.css';
+import css from './Teams.module.css';
 
 class Teams extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className={css.page}>
                 Teams.
             </div>
         )

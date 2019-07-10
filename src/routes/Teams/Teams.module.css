@@ -1,0 +1,9 @@
+.page
+{
+    width: 100%;
+    margin-top: 10vh;
+    min-height: 90%;
+    background-color: purple;
+    position: absolute;
+    z-index: -1;
+}

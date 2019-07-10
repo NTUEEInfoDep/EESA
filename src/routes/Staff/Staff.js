@@ -1,12 +1,11 @@
 import React from 'react';
-
-import classes from './Staff.module.css';
+import css from './Staff.module.css';
 
 class Staff extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className={css.page}>
                 Staffs.
             </div>
         )

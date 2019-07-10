@@ -1,12 +1,11 @@
 import React from 'react';
-
-import classes from './Dept.module.css';
+import css from './Dept.module.css';
 
 class Dept extends React.Component{
 
     render(){
         return(
-            <div>
+            <div className={css.page}>
                 Depts.
             </div>
         )
