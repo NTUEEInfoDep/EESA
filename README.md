@@ -27,8 +27,8 @@ For each component (either in `routes` or `components`), it should have its **ow
     - `utils.js`
 
 #### Fast composition
-Install component generation script via `pip`.
+Go to `compose` directory.
 ```
-python3 -m pip install compose
+python3 -m pip install .
 compose <component-name>
 ```
