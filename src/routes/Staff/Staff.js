@@ -7,6 +7,7 @@ class Staff extends React.Component{
     render(){
         return(
             <div>
+                Staffs.
             </div>
         )
     }

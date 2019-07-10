@@ -7,6 +7,7 @@ class Dept extends React.Component{
     render(){
         return(
             <div>
+                Depts.
             </div>
         )
     }

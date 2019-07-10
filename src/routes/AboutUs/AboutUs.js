@@ -7,6 +7,7 @@ class AboutUs extends React.Component{
     render(){
         return(
             <div>
+                AboutUs.
             </div>
         )
     }
