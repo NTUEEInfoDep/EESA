@@ -9,19 +9,26 @@ Hey guys! This is the template for the EESA Website - an ongoing project that wi
 
 ## Guidelines
 ### The `src` folder
-Should contain `components` folder and `routes` folder.
+Should contain `assets` folder, `components` folder, and `routes` folder.
 - `assets`: static assets such as images and fonts.
 - `components`: Small React components that reside in a single page (associated with a route).
 - `routes`: A single page that is associated with a unique route defined by **react-router**.
 
 To sum it up, a React component in the `routes` directory contains several components in the `components` directory.
+
 ### Designing a component
+
 For each component (either in `routes` or `components`), it should have its **own folder** structured as follows:
 
 - `component-name`
     - `component-name.js`
     - `component-name.module.css`
     - `index.js`
-    - `subcomponents`
-        - Directory containing components closely related to the top-level component.
-    - `utils.js`: Utility functions.
+    - `utils.js`
+
+#### Fast composition
+Install component generation script via `pip`.
+```
+python3 -m pip install compose
+compose <component-name>
+```
