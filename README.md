@@ -26,9 +26,39 @@ For each component (either in `routes` or `components`), it should have its **ow
     - `index.js`
     - `utils.js`
 
+### Reusing Components
+- For example, the same template `Dept` can be used for any department. Its format should be similar.
+- If customization is needed, use inheritance.
+
 #### Fast composition
 Go to `compose` directory.
 ```
 python3 -m pip install .
 compose <component-name>
 ```
+
+### Use responsive CSS
+- Use % rather than px.
+- If hard-coding is really necessary, use `vh` and `vw`.
+
+## Contents of the Website
+- Header (Navigation bar)
+    - 首頁
+    - 最新消息、活動
+    - 關於系學會
+        - 簡介
+        - 幹部一覽
+    - 系學會各部門
+        - 學術部
+        - 資訊部
+        - ...
+    - 各系隊
+        - 系羽 
+        - 系籃
+        - ...
+    - 聯絡我們
+
+## Problems
+### `material-ui/Menu`
+- Sizing of `MenuItem`
+- Text overflow
