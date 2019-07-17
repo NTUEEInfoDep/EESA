@@ -11,10 +11,7 @@ class Contact extends React.Component{
                 </div>
                 <div className={css.rightContainer}>
                     <div className={css.formContainer}>
-                        <div className={css.inputContainer}><InputField/></div>
-                        <div className={css.inputContainer}><InputField/></div>
-                        <div className={css.inputContainer}><InputField/></div>
-                        <div className={css.inputContainer}><InputField/></div>
+                        
                     </div>
                 </div>
             </div>
