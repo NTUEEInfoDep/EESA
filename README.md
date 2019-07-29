@@ -43,6 +43,12 @@ compose <component-name>
 - If hard-coding is really necessary, use `vh` and `vw`.
     - Work-around for collapsing margins.
 
+### 頁面設計
+1. 先想內容。注意重複利用性。
+2. 切版面
+3. 靜態部分寫好。
+4. 其他。
+
 ## Contents of the Website
 - Header (Navigation bar)
     - 首頁
@@ -60,7 +66,33 @@ compose <component-name>
         - ...
     - 聯絡我們
 
+### 系學會各部門頁面
+- 部長：照片＋簡介
+- 部員：列表式
+- 負責內容
+- 其他
+
+### 系隊頁面
+- 隊長：照片＋簡介
+- 介紹
+- 比賽紀錄
+- 照片
+
 ## Problems
 ### `material-ui/Menu`
 - Sizing of `MenuItem`
 - Text overflow
+### 照片
+
+## References
+### 其他系學會網站
+可以參考看看有哪些內容。
+- 國防醫：http://ndmcmsc.weebly.com
+- 成大醫：https://reso.med.ncku.edu.tw
+- 成大工管：http://www.iim.ncku.edu.tw/p/412-1138-19455.php?Lang=zh-tw
+- 慈濟醫：http://www.medclub.tcu.edu.tw
+- 馬偕醫：http://www.mmcmsa.com
+
+## Others
+- 版面設計可找poga討論
+- 內容問昱翰土豪
